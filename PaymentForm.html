@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1>Payment Form</h1></legend>
+      <form action="">
+        <h2>Contact Information</h2>
+
+        <p>Name: <br /><input type="text" name="Name" /></p>
+        <p>
+            Last Name: <br>
+            <input type="text" name="LName" id="LName" />
+        </p>
+        <p1><b>Gender</b></p1>
+        <p>
+          Male<input type="radio" name="Gender" id="Male" /> Female
+          <input type="radio" name="Gender" id="Female" />
+        </p>
+        <p>
+          Address: <br />
+          <textarea name="address" id="adress" cols="20" rows="1"></textarea>
+        </p>
+        <p>
+            Email: <br>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            Password: <br>
+            <input type="password" name="Password" id="Password">
+        </p>
+        <p>
+            <input type="checkbox" name="terms" id="terms">
+            I agrree to Terms & Condtitions
+        </p>
+        <p>
+            Select the Colour: <br>
+            <input type="color" name="color" id="color">
+        </p>
+        <p>
+            Date of Birth: <br>
+            <input type="date" name="birhtdate" id="birhtdate">
+        </p>
+        <p>
+            Order Date: <br>
+            <input type="date" name="datemax" id="order" max="2024-12-30">
+            <br><br>
+            Delivery Date: <br>
+            <input type="date" name="datemin" id="order" min="2000-12-12">
+        </p>
+        <p>
+            Time of Delivery <br>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+        </p>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </form>
+    </fieldset>
+  </body>
+</html>
