@@ -3,62 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Checkout Page</title>
   </head>
   <body>
+    <a href="index.html" target="_parent">Back to Home</a>
+    
     <fieldset>
-      <legend><h1>Payment Form</h1></legend>
+      <legend><h1>Checkout</h1></legend>
       <form action="">
-        <h2>Contact Information</h2>
-
-        <p>Name: <br /><input type="text" name="Name" /></p>
+        <hr><h2>Contact Information</h2><hr>
         <p>
-            Last Name: <br>
-            <input type="text" name="LName" id="LName" />
+          Email <br />
+          <input type="email" name="email" id="email" required/><br>
+          Name <br />
+          <input type="text" name="Name" required/> <br>
+          Last Name <br />
+          <input type="text" name="LName" id="LName" /><br>
+          Phone Number<br>
+          <select>
+            <option value="">--Country Code--</option>
+            <option value="Pakistan">+92</option>
+            <option value="Asutralia">+61</option>
+            <option value="United Kingdom">+4</option>
+            <option value="USA">+1</option>
+          </select><input type="number" name="phone number" id="phone number">
+          <hr><h3>Address</h3> <hr>
+          Street<br>
+          <input type="text" name="Street" id="Street"><br>
+          City<br>
+          <input type="text" name="City" id="city" required><br>
+          Province<br>
+          <input type="text" name="Province" id="Province"><br>
+          Postal Code<br>
+          <input type="number" name="Postal" id="Postal"><br>
+          Country<br>
+          <select>
+            <option value="">--Select the Country--</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Asutralia">Asutralia</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="USA">USA</option>
+          </select><br>
+          <hr><h3>Delivery Method</h3><hr>
+          <b>Standard Delivery  </b>
+          <input type="radio" name="DeliveryMethod" id="DeliveryMethod">
+          5 to 7 Business Days<br>
+          <b>Express Delivery</b>
+          <input type="radio" name="DeliveryMethod" id="DeliveryMethod">
+          2 to 4 Business Days
         </p>
-        <p1><b>Gender</b></p1>
-        <p>
-          Male<input type="radio" name="Gender" id="Male" /> Female
-          <input type="radio" name="Gender" id="Female" />
-        </p>
-        <p>
-          Address: <br />
-          <textarea name="address" id="adress" cols="20" rows="1"></textarea>
-        </p>
-        <p>
-            Email: <br>
-            <input type="email" name="email" id="email">
-        </p>
-        <p>
-            Password: <br>
-            <input type="password" name="Password" id="Password">
-        </p>
-        <p>
-            <input type="checkbox" name="terms" id="terms">
-            I agrree to Terms & Condtitions
-        </p>
-        <p>
-            Select the Colour: <br>
-            <input type="color" name="color" id="color">
-        </p>
-        <p>
-            Date of Birth: <br>
-            <input type="date" name="birhtdate" id="birhtdate">
-        </p>
-        <p>
-            Order Date: <br>
-            <input type="date" name="datemax" id="order" max="2024-12-30">
+        <hr><h3>Card Information</h3><hr>
+         <p>
+          Select Card Type: <br>
+            <select>
+                <option value="">--Select Card Type--</option>
+                <option value="Master">Master Card</option>
+                <option value="Visa">Visa</option>
+                <option value="Paypal">Paypal</option>
+            </select>
             <br><br>
-            Delivery Date: <br>
-            <input type="date" name="datemin" id="order" min="2000-12-12">
-        </p>
-        <p>
-            Time of Delivery <br>
-            <input type="datetime-local" name="datetime-local" id="datetime-local">
-        </p>
+            Card Holder Name: <br>
+            <input type="text" name="Card" id="card">
+            <br><br>
+            
+            Card Number: <br>
+            <input type="number" name="Card" id="Card">
+            <br><br>
+            Card Expiration Date: <br>
+            <input type="date" name="Expire" id="Expire">
+            <br><br>
+            CVV <br>
+            <input type="number" name="CVV" id="CVV" required><br><br>
+            <input type="checkbox" name="terms" id="terms">
+            I have agree to Terms & Conditions
+
+          </p>
+         </fieldset>
         <input type="submit" value="submit">
-        <input type="reset" value="reset">
+        <input type="reset" value="reset" />
+        
       </form>
-    </fieldset>
   </body>
 </html>
